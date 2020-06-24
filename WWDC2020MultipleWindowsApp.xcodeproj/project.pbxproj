@@ -13,6 +13,8 @@
 		D0B891D424A40DEA00E2AE20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B891BF24A40DE900E2AE20 /* ContentView.swift */; };
 		D0B891D524A40DEA00E2AE20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B891C024A40DEA00E2AE20 /* Assets.xcassets */; };
 		D0B891D624A40DEA00E2AE20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B891C024A40DEA00E2AE20 /* Assets.xcassets */; };
+		D0B891E024A41CB900E2AE20 /* ClickCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B891DF24A41CB900E2AE20 /* ClickCounter.swift */; };
+		D0B891E124A41CB900E2AE20 /* ClickCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B891DF24A41CB900E2AE20 /* ClickCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		D0B891CD24A40DEA00E2AE20 /* WWDC2020MultipleWindowsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC2020MultipleWindowsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0B891CF24A40DEA00E2AE20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0B891D024A40DEA00E2AE20 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D0B891DF24A41CB900E2AE20 /* ClickCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,10 @@
 		D0B891BD24A40DE900E2AE20 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				D0B891BE24A40DE900E2AE20 /* WWDC2020MultipleWindowsAppApp.swift */,
-				D0B891BF24A40DE900E2AE20 /* ContentView.swift */,
 				D0B891C024A40DEA00E2AE20 /* Assets.xcassets */,
+				D0B891DF24A41CB900E2AE20 /* ClickCounter.swift */,
+				D0B891BF24A40DE900E2AE20 /* ContentView.swift */,
+				D0B891BE24A40DE900E2AE20 /* WWDC2020MultipleWindowsAppApp.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -187,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B891E024A41CB900E2AE20 /* ClickCounter.swift in Sources */,
 				D0B891D324A40DEA00E2AE20 /* ContentView.swift in Sources */,
 				D0B891D124A40DEA00E2AE20 /* WWDC2020MultipleWindowsAppApp.swift in Sources */,
 			);
@@ -196,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0B891E124A41CB900E2AE20 /* ClickCounter.swift in Sources */,
 				D0B891D424A40DEA00E2AE20 /* ContentView.swift in Sources */,
 				D0B891D224A40DEA00E2AE20 /* WWDC2020MultipleWindowsAppApp.swift in Sources */,
 			);

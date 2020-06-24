@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var counter: ClickCounter
+    @State var textColor: Color
+    
+    private let availableColors: [Color] = [.black, .blue, .green, .orange, .pink, .purple, .red, .yellow]
+    
     var body: some View {
-        Text("Hello, world!").padding()
+        VStack {
+            Text("Hello, Color!")
+                .font(.largeTitle)
+                .foregroundColor(textColor)
+                .onTapGesture {
+                    counter.incrementInvocations()
+                    textColor = availableColors.randomElement()!
+            }
+            Text("\(counter.invocations)")
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(counter: ClickCounter(), textColor: .black)
     }
 }

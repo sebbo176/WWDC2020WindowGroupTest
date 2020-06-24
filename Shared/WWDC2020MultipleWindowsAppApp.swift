@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct WWDC2020MultipleWindowsAppApp: App {
+    
+    @StateObject var clickCounter = ClickCounter()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(counter: clickCounter, textColor: .black)
         }
     }
 }
